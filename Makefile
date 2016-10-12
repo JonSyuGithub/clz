@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -O0 -std=gnu99 -Wall
-#EXEC = clzAlgo
+EXEC = clzAlgo time_test_clzIteration time_test_clzBinarySearch time_test_clzByteShift time_test_clzHarley
 
 #default: $(EXEC)
 default: clzAlgo.o
@@ -24,4 +24,4 @@ plot: default
 	gnuplot runtime.gp
 
 clean:
-	rm -f $(EXEC) *.o runtime.png time.txt
+	rm -f $(EXEC) *.o *.s runtime.png time.txt
